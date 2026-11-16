@@ -1,47 +1,59 @@
-# Job Hunt HQ by Sina (v2.1)
+# Job Hunt HQ by Sina (v2.2)
 
-**A £0, Zero-Setup Automated Career Assistant on Google Gemini Scheduled Tasks, Google Drive & Gemini Notebook**  
-Created by **Sina Tijani** ([github.com/sinatijani](https://github.com/sinatijani)) | Repository: [`job-hunt-hq-by-sina`](https://github.com/sinatijani/job-hunt-hq-by-sina)
+**A £0, Open-Source Agentic Career Assistant for Every Degree, Profession & Country**  
+Created by **Sina Tijani** ([github.com/sinatijani](https://github.com/sinatijani)) | Repository: `https://github.com/sinatijani/job-hunt-hq-by-sina`
 
-Job Hunt HQ by Sina works like a calm, organized human career assistant inside your own Google account at **£0 monthly cost**. While you sleep or work shifts, it scouts fresh UK and graduate openings, builds neat per-job folders with ATS-ready 1-to-2-page CVs (editable Google Doc + ready-to-upload PDF) and 1-page cover letters, tracks recruiter emails, checks in with you naturally after interviews, and syncs interview materials straight into a single **Job Hunt HQ by Sina** Gemini Notebook for live practice.
+Job Hunt HQ by Sina turns **Google Gemini + Google Drive + Gemini Notebook** into an organized personal career assistant at **£0 cost**. Whether you studied engineering, healthcare, business, design, law, sciences, humanities, software, or analytics - and even if you do not have a finished CV yet - it helps you build or sharpen your Master CV, scouts fresh roles with salary and sponsorship checks, prepares submission-ready Google Doc + PDF CVs per job without gutting your experience, tracks whether you applied so jobs never pile up, and syncs interview prep straight into **Gemini Notebook**.
 
-## Short, Simple Google Drive Layout (Created Automatically)
+> **Important Consent & Data Notice**: This open-source workflow runs inside **your own** Google Gemini and Google Workspace account (the creator never sees your data). By using it and uploading your CV, you understand and consent that your AI assistant will read and process the personal details on your CV (such as your name, email, education, and work history) to find matching roles and tailor your applications. Please read `DISCLAIMER.md` before starting.
 
-You do not create any folders, spreadsheets, or skills by hand. On its first run, the assistant sets up `My Drive/Job_Hunt_HQ_by_Sina/` with short, uncluttered names:
+## Clean Google Drive Layout (Created Automatically)
+
+You do not create any folders, spreadsheets, or skills by hand. On first run, the assistant sets up `My Drive/Job_Hunt_HQ_by_Sina/` with short, calm names:
 
 ```text
 My Drive/Job_Hunt_HQ_by_Sina/
-├── Job_Tracker          (1 Google Sheet with 3 clean tabs: Jobs, Contacts, Summary)
-├── My_CV_And_Docs/      (Drop your Master CV + transcripts, dissertations, or project notes here)
-├── Applications/        (1 short-named folder per job, e.g. Unipart_Analyst/)
-│   └── Unipart_Analyst/
-│       ├── Job_Details          (Google Doc: full JD, apply link, company notes & 1-page cover letter)
-│       ├── Master_CV_Copy       (Untouched snapshot copy of your Master CV)
-│       ├── First_Last_CV        (Editable Google Doc CV, strictly 1 to 2 pages max)
-│       ├── First_Last_CV.pdf    (Ready-to-upload PDF, strictly 1 to 2 pages max + 1-tap export link)
-│       └── Interview_Prep       (Added automatically when invited to a test or interview)
-└── Agent_System/        (Keeps Agent_Memory tucked away out of your working view)
+├── Job_Tracker          (Google Sheet with 3 tabs: Jobs [with Salary & Applied columns], Contacts, Summary)
+├── My_CV_And_Docs/      (Drop your CV + transcripts or projects here; unclear filenames are auto-cleaned!)
+├── Applications/        (1 flat folder per job: <Company>_<Short_Role>/)
+│   └── <Company>_<Short_Role>/
+│       ├── Job_Details                      (Google Doc: Company, Salary, Sponsorship, JD & 1-page Cover Letter)
+│       ├── FirstName_LastName_Role_CV       (Editable Google Doc CV, 1 to 2 pages max, full non-scanty depth)
+│       ├── FirstName_LastName_Role_CV.pdf   (Submission-ready PDF file ready to upload on the employer portal)
+│       └── Interview_Prep                   (Added automatically when invited to an assessment or interview)
+└── Agent_System/        (Holds your single Agent_Memory file tucked out of your way)
 ```
 
-## How It Works Across Your Whole Job Search
+## Important Compatibility Notes: Regions, Plans, Schedules & Quotas
 
-1. **Full Context Without Overwriting (`My_CV_And_Docs/`)**: Drop your Master CV plus any transcripts, dissertation or consultancy reports, and project notes. The assistant learns your real background and never alters your original files.
-2. **Recruiter-Grade CV & Cover Letter Standards (`Applications/`)**:
-   - **Strictly 1 to 2 A4 Pages for CVs & 1 A4 Page for Cover Letters**: Single-column, clean layout that parses cleanly in Workday, Greenhouse, and Lever, using Google's XYZ outcome formula without keyword stuffing or robotic AI jargon.
-   - **Editable Doc + Ready PDF + Learns Your Edits**: Edit the Google Doc anytime; the assistant remembers your changes in `Agent_System/Agent_Memory` for future roles and gives you a ready PDF for portal upload.
-3. **Gemini Notebook Live Interview Coach (`Job Hunt HQ by Sina`)**:
-   - Whenever a morning Gmail/Calendar check sees you moved to the next stage (online test, phone screen, or interview), the assistant pushes that role's Job Description, your submitted CV, and live company research into one unified **Job Hunt HQ by Sina** Gemini Notebook.
-   - It then gives you a **copy-paste company-scoped prompt** (so Gemini Notebook focuses on *that* exact company even when sources from multiple companies are in the notebook) and guides you to save a dedicated item in Gemini Notebook's **Studio** panel for quick review before your call.
-4. **100% Human-in-the-Loop Safety**:
-   - **Never Auto-Submits Portals**: Stops and shares clickable 1-tap links so you inspect your CV and apply on the company site yourself.
-   - **Never Auto-Sends Emails**: Saves recruiter replies and follow-ups strictly as unsent **Gmail Drafts** so you review and click **Send** yourself.
+1. **Scheduled Tasks vs. Standard Chat (UK & Free Google Accounts Work Too!)**:
+   - **Where Scheduled Tasks Is Available**: Google Gemini's **Scheduled Tasks** feature is currently available on paid tiers (**Google AI Plus, Pro, and Ultra**) in supported rollout regions (such as the US).
+   - **If You Are in the UK or Using a Free Google Account**: If you do not see **Scheduled** in your Gemini menu yet, **everything still works!** All 5 `jh-*` Gemini Skills, Google Drive folders, `Job_Tracker`, PDF generation, and Gemini Notebook work on standard/free accounts. Simply paste `PROMPT.md` into a normal Gemini chat, **pin that chat**, and type **`"Continue"`** or **`"Any updates?"`** once a day whenever you want your assistant to check emails and prepare roles.
+2. **Schedule Caution: Use Daily, NOT Hourly**:
+   - Google AI Pro enforces a minimum schedule of **Daily**. Even if you have an **AI Ultra** plan that allows hourly runs, **do NOT set this task to Hourly**. Hourly runs send 24 notifications a day, pile up unapplied roles faster than any human can review them, and cause notification fatigue. Set it to **Daily** (for example `07:00 AM`), and message the chat manually anytime you want an extra check.
+3. **Models & 5-Hour Quota Windows**:
+   - Capable reasoning models (such as **Gemini 4 Argon** or **Gemini 4 Carbon**, when unlocked on your account) produce the sharpest CV tailoring and sheet updates, while standard models (such as **Gemini 4 Hydrogen**, **Auto**, or **Flash-Lite**) also work.
+   - Free Google accounts have smaller 5-hour usage windows. Because progress is saved inside Google Drive (`Agent_Memory` and `Job_Tracker`), if your chat ever pauses at a 5-hour usage limit mid-run, just wait for your 5-hour window to refresh and type **`"Continue"`** in the exact same chat to pick right back up.
 
-## 60-Second Setup (Works on Android, iPhone, iPad, Windows & Mac)
+## 60-Second Setup Guide (Android, iPhone, iPad, Windows & Mac)
 
-1. **Turn On Google Workspace & Gemini Notebook Connectors**:
-   - Inside Gemini (web or mobile app on Android or iPhone/iPad), tap the **menu button** (three horizontal lines in the top corner) or settings -> tap **Customize** (where you see Discover, Connectors, and Skills) -> tap **Connectors** -> switch **Google Workspace** and **Gemini Notebook** **ON**. Both use your existing Google account automatically with no separate sign-in needed.
-2. **Create Your Scheduled Task**:
-   - Go to **Scheduled** (Scheduled Tasks) -> **Create** -> name it **`Job Hunt HQ by Sina`**.
-   - Set the time **5 minutes from now** and click **Save** (*do NOT click **Run now**, because Run now opens a separate one-off chat instead of starting your permanent assistant thread*). Once it wakes up and builds your folder, edit the schedule to **Daily at 07:00** and click **Save**.
-3. **Paste `PROMPT.md`**: Copy everything inside `PROMPT.md`, paste it into the **Plan** box, and click **Save**.
-4. **Drop Your CV & Reply `"Done"`**: Tap the link it gives you for `My_CV_And_Docs/`, upload your Master CV (plus any optional project reports), and reply `"Done"` with your target roles, preferred locations, visa status, and shift/sleep hours.
+1. **Turn On Connectors**:
+   - In Gemini, tap the **menu button** (three lines in the top corner) -> **Customize** (where you see *Discover, Connectors, Skills*) -> **Connectors** -> switch **Google Workspace** and **Gemini Notebook** **ON** (uses your same Google account automatically).
+2. **Start Your Assistant**:
+   - *With Scheduled Tasks*: Open **Scheduled** -> **Create** -> name it `Job Hunt HQ by Sina` -> set your first run **5 minutes from now** and click **Save** (*do NOT click Run now*; once it runs the first time, edit the schedule to **Daily at 07:00**).
+   - *Without Scheduled Tasks (UK / Free Accounts)*: Open a **New Chat** in Gemini and **Pin** the chat.
+3. **Paste `PROMPT.md`**: Copy all of `PROMPT.md`, paste it in, and press Send/Save. It automatically creates your Drive folders and installs all 5 `jh-*` skills (`jh-cv-builder`, `jh-job-scout`, `jh-cv-tailor`, `jh-inbox-tracker`, `jh-interview-prep`).
+4. **Drop Your CV (or Build One From Scratch!)**:
+   - Drop your CV (PDF, Word, or Doc) into `My_CV_And_Docs/` and reply **`"Done"`** (or if you don't have a good CV yet, reply **`"Help me build my CV"`**!).
+   - The assistant cleans up your filename, saves an editable Master CV Doc, greets you by first name, gives you a quick numbered list of role options based on your background (including an **`All of the above`** shortcut), and immediately prepares your `Job_Tracker` + ready-to-apply folders with PDFs!
+
+## One-Paste Skill Upgrades
+
+Whenever a newer version of `Job Hunt HQ by Sina` is released here on GitHub, check the version header at the top of `PROMPT.md` (currently **`v2.2`**). If it is higher than yours, simply copy `PROMPT.md`, paste it into Gemini, and hit Enter: the assistant automatically detects older `jh-*` skill versions and upgrades all 5 skills in place without needing you to delete anything first.
+
+## Repository Files
+
+- `PROMPT.md` - Complete All-in-One Prompt (`v2.2`) with automatic skill installer & version upgrader.
+- `DISCLAIMER.md` - Open-source AI CV-processing consent & human-review notice.
+- `skills/` - Standalone `SKILL.md` files (`jh-cv-builder`, `jh-job-scout`, `jh-cv-tailor`, `jh-inbox-tracker`, `jh-interview-prep`).
+- `LICENSE` - MIT License.
