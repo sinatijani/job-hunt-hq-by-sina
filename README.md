@@ -7,6 +7,14 @@ Job Hunt HQ by Sina turns **Google Gemini + Google Drive + Gemini Notebook** int
 
 > **Important Consent & Data Notice**: This open-source workflow runs inside **your own** Google Gemini and Google Workspace account (the creator never sees your data). By using it and uploading your CV, you understand and consent that your AI assistant will read and process the personal details on your CV (such as your name, email, education, and work history) to find matching roles and tailor your applications. Please read `DISCLAIMER.md` before starting.
 
+## Video Walkthrough (4-Minute Phone Setup)
+
+[Watch the Setup Walkthrough on YouTube](https://youtu.be/N3pFOdp0knY)
+
+[![Job Hunt HQ by Sina Setup Walkthrough](https://img.youtube.com/vi/N3pFOdp0knY/maxresdefault.jpg)](https://youtu.be/N3pFOdp0knY)
+
+Covers downloading the 4 free apps (Google Gemini, Google Drive, Gemini Notebook, Gmail), setting up on a free Google account, dropping your CV in Drive, and checking updates.
+
 ## Clean Google Drive Layout (Created Automatically)
 
 You do not create any folders, spreadsheets, or skills by hand. On first run, the assistant sets up `My Drive/Job_Hunt_HQ_by_Sina/` with short, calm names:
@@ -36,6 +44,8 @@ My Drive/Job_Hunt_HQ_by_Sina/
    - Free Google accounts have smaller 5-hour usage windows. Because progress is saved inside Google Drive (`Agent_Memory` and `Job_Tracker`), if your chat ever pauses at a 5-hour usage limit mid-run, just wait for your 5-hour window to refresh and type **`"Continue"`** in the exact same chat to pick right back up.
 
 ## 60-Second Setup Guide (Android, iPhone, iPad, Windows & Mac)
+
+Prefer to watch first? [Watch the 4-minute phone walkthrough on YouTube](https://youtu.be/N3pFOdp0knY).
 
 1. **Turn On Connectors**:
    - In Gemini, tap the **menu button** (three lines in the top corner) -> **Customize** (where you see *Discover, Connectors, Skills*) -> **Connectors** -> switch **Google Workspace** and **Gemini Notebook** **ON** (uses your same Google account automatically).
